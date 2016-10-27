@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">     
+	<head>        
+		<meta charset="UTF-8">        
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">        
+		<title>娱乐测试</title>         
+		<link rel="stylesheet" href="stylesheet/weui/dist/style/weui.css">
+		<!-- <link rel="stylesheet" href="node_modules/weui/dist/example/example.css">      -->
+		<style>
+			#title{
+				font-size: 150%;
+				color: maroon;
+				padding-top:25px;
+				padding-bottom:8px;
+				text-align:center
+			}
+		</style>
+	</head>    
+	<body style="background-color:#f8f8f8;">
+		<div id="title">超准的迷之测试！</div>
+		<form>
+			<div class="weui-cells__title">性别</div>
+			<div class="weui-cells weui-cells_radio">
+				<label class="weui-cell weui-check__label" for="x11">
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>男</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" value="male" class="weui-check" name="gender" id="x11" checked="checked">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="x12">
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>女</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" value="female" name="gender" class="weui-check" id="x12">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="x13">
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>未知</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" value="unknown" name="gender" class="weui-check" id="x13">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells__title">兴趣爱好</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label" for="s11">
+					<div class="weui-cell__hd">
+						<input type="checkbox" value="coding" class="weui-check" name="hobby" id="s11">
+						<i class="weui-icon-checked"></i>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>写代码</p>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="s12">
+					<div class="weui-cell__hd">
+						<input type="checkbox" value="loveGuo" class="weui-check" name="hobby" id="s12">
+						<i class="weui-icon-checked"></i>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>爱郭立秋</p>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="s13">
+					<div class="weui-cell__hd">
+						<input type="checkbox" value="loveWang" class="weui-check" name="hobby" id="s13">
+						<i class="weui-icon-checked"></i>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>爱王小雪</p>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells__title">婚否</div>
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell weui-cell_switch">
+					<div class="weui-cell__bd weui-cell_primary">已婚</div>
+					<div class="weui-cell__ft">
+						<input type="checkbox" class="weui-switch" name="married" value="true" checked="checked">
+					</div>
+				</div>
+			</div>		
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" href="javascript:;" id="button">进行测试</a>
+		</div>
+		</form>
+
+		<script src ="javascripts/jquery/dist/jquery.min.js"></script>
+		<script src ="javascripts/weui.js/dist/weui.js"></script>
+		<script>
+			$(function(){
+  				$('#button').on('click', function(){
+    				var data = $('form').serialize();
+    				// var content = JSON.stringify(data).replace(/"/gi, '').replace(/&/gi, '<br>')
+    				var content = '经测试，你是个好人！';
+    				// $.weui.alert(content);
+    				$.weui.confirm(content, {title: '测试完毕'})
+ 				});
+			});
+		</script>
+	</body> 
+</html> 

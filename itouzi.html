@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">     
+	<head>        
+		<meta charset="UTF-8">        
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">        
+		<title>爱投资</title>         
+		<link rel="stylesheet" href="../node_modules/weui/dist/style/weui.css">
+		<!-- <link rel="stylesheet" href="node_modules/weui/dist/example/example.css">      -->
+		<style>
+			#title{
+				font-size: 150%;
+				color: maroon;
+				padding-top:25px;
+				padding-bottom:8px;
+				text-align:center
+			}
+		</style>
+	</head>    
+	<body style="background-color:#f8f8f8;">
+		<div id="title">爱投资信息查询</div>
+		<form>
+			<div class="weui-cells__title">用户名</div>
+			<div class="weui-cells weui-cells_radio">
+				<label class="weui-cell weui-check__label" for="x11">
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>pinkbluer</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" value="pinkbluer" class="weui-check" name="username" id="x11" checked="checked">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="x12">
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>whucat</p>
+					</div>
+					<div class="weui-cell__ft">
+						<input type="radio" value="whucat" class="weui-check" name="username" id="x12">
+						<span class="weui-icon-checked"></span>
+					</div>
+				</label>
+			</div>
+			<div class="weui-cells__title">查询项目</div>
+			<div class="weui-cells weui-cells_checkbox">
+				<label class="weui-cell weui-check__label" for="s11">
+					<div class="weui-cell__hd">
+						<input type="checkbox" value="money" class="weui-check" name="item" id="s11">
+						<i class="weui-icon-checked"></i>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>账户余额</p>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="s12">
+					<div class="weui-cell__hd">
+						<input type="checkbox" value="coupon" class="weui-check" name="item" id="s12">
+						<i class="weui-icon-checked"></i>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>优惠券</p>
+					</div>
+				</label>
+				<label class="weui-cell weui-check__label" for="s13">
+					<div class="weui-cell__hd">
+						<input type="checkbox" value="items" class="weui-check" name="item" id="s13">
+						<i class="weui-icon-checked"></i>
+					</div>
+					<div class="weui-cell__bd weui-cell_primary">
+						<p>可投项目</p>
+					</div>
+				</label>
+			</div>			
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" href="javascript:;" id="button">查询</a>
+		</div>
+		</form>
+
+		<script src ="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src ="../node_modules/weui.js/dist/weui.js"></script>
+		<script>
+			$(function(){
+  				$('#button').on('click', function(){
+    				var data = $('form').serialize();
+    				// var content = JSON.stringify(data).replace(/"/gi, '').replace(/&/gi, '<br>')
+    				var content = '功能待开发';
+    				// $.weui.alert(content);
+    				$.weui.alert(content, {title: '仅供参考'})
+ 				});
+			});
+		</script>
+	</body> 
+</html> 

@@ -1,0 +1,72 @@
+{
+  "name": "weui.js",
+  "version": "0.3.0",
+  "description": "JavaScript for WeUI",
+  "main": "dist/weui.js",
+  "scripts": {
+    "build": "gulp",
+    "start": "gulp watch",
+    "test": "npm run build && gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progrape/weui.js.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "jf",
+    "email": "xingzhewujiang1999@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/progrape/weui.js/issues"
+  },
+  "homepage": "https://github.com/progrape/weui.js",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "browser-sync": "^2.11.1",
+    "expect.js": "^0.3.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-header": "^1.7.1",
+    "gulp-mocha-phantomjs": "^0.11.0",
+    "gulp-order": "^1.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-tap": "^0.1.3",
+    "gulp-uglify": "^1.5.1",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.3",
+    "zepto": "^1.0.1"
+  },
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "weui": "^0.4.1"
+  },
+  "gitHead": "65aefd90c2c08bc3a616ad1e2fb3dc8a8146599a",
+  "_id": "weui.js@0.3.0",
+  "_shasum": "c8bbbafb72787b5f3b5659950c9d2619ec20a7ff",
+  "_from": "weui.js@latest",
+  "_npmVersion": "3.3.6",
+  "_nodeVersion": "5.0.0",
+  "_npmUser": {
+    "name": "jfengjiang",
+    "email": "xingzhewujiang1999@gmail.com"
+  },
+  "dist": {
+    "shasum": "c8bbbafb72787b5f3b5659950c9d2619ec20a7ff",
+    "tarball": "https://registry.npmjs.org/weui.js/-/weui.js-0.3.0.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "jfengjiang",
+      "email": "xingzhewujiang1999@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/weui.js-0.3.0.tgz_1465438503682_0.5969456350430846"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/weui.js/-/weui.js-0.3.0.tgz"
+}
